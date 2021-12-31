@@ -1,4 +1,13 @@
 # Dynamic DNS client for netcup DNS API
+
+## Changes in this fork
+* Add `USE_IPV4` config setting to disable IPv4 completely (necessary for DS-Lite)
+* Remove some unnecessary logs
+* Add `stderr()` logs instead when things fail (like login etc.)
+* Script to be used via crontab: `*/5 * * * * /usr/bin/php /path/to/update.php >> /path/to/logfile.txt 2>&1`
+
+---
+
 *This project is not affiliated with the company netcup GmbH. Although it is developed by an employee, it is not an official client by netcup GmbH and was developed in my free time.*
 *netcup is a registered trademark of netcup GmbH, Karlsruhe, Germany.*
 
